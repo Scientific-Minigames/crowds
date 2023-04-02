@@ -16,10 +16,6 @@ subscribe("prepreload", function(){
 		{id:"snip1", audio:"audio/snip1.mp3"},
 		{id:"snip2", audio:"audio/snip2.mp3"},
 
-		// UI
-		{id:"sound", image:"sprites/ui/sound.png"},
-		{id:"sharing", image:"sprites/ui/sharing.png"},
-
 	],function(progress){
 		if(progress==1){
 			publish("prepreload/done");

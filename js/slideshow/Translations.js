@@ -32,18 +32,6 @@ r.onreadystatechange = function () {
 	TRANSLATIONS = TRANSLATIONS.sort(function(a,b){
 		return a.lang>b.lang;
 	});
-
-	// Show translations (if any)
-	if(TRANSLATIONS.length>0){
-		var html = "";
-		html += getWords("translations_exist").toLowerCase();
-		html += " <a target='_blank' href='"+window.ADD_YOUR_OWN_LINK+"'>"+getWords("translations_add")+"</a>";
-		html += " | ";
-		html += _createLinks(" · ");
-				
-		$("#translations").innerHTML = html;
-	}
-
 };
 r.send();
 
