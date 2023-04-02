@@ -43,13 +43,13 @@ function _touchWrapper(callback){
 	};
 }
 
-// ALSO DON'T SCROLL WHEN TOUCH
-document.body.addEventListener("touchstart", function(e){
-    e.preventDefault(); 
-},false); // do NOT capture.
-document.body.addEventListener("touchmove", function(e){
-    e.preventDefault(); 
-},false); // do NOT capture.
+// // ALSO DON'T SCROLL WHEN TOUCH
+// document.body.addEventListener("touchstart", function(e){
+//     e.preventDefault(); 
+// },false); // do NOT capture.
+// document.body.addEventListener("touchmove", function(e){
+//     e.preventDefault(); 
+// },false); // do NOT capture.
 
 // INIT
 Mouse.init = function(target){
